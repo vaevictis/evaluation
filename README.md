@@ -64,25 +64,14 @@ Read in strings from stdin.  Return a non zero exit code on error.
 For the array of letters (a, b, c, d, e, f), write a **recursive** function that outputs the following structure:
 
     <a>
-
         <b>
-
             <c>
-
                 <d>
-
                     <e>
-
                         <f>
-
                         </f>
-
                     </e>
-
                 </d>
-
             </c>
-
         </b>
-
     </a>
