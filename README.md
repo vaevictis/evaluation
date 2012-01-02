@@ -1,7 +1,7 @@
 # Ruby skills evaluation
 
-I was asked these few exercises as a skills evaluation for a potential employer. I'll leave it here for access to any other person interested to check my ruby and coding skills.
-It took me arround 3 hours to answer these few questions. I clearly developed this while being connected to the internet, and man I used it. But I don't consider a "skill" to know any API by heart. I'll chat about this with pleasure.
+I was asked to answer these few questions as a skill evaluation for a potential employer. I'll leave it here for access to any other person interested in checking my ruby and coding skills.
+It took me arround 3 hours to answer these few questions. I clearly developed this while being connected to the internet, and yes I used it. But I don't consider a "skill" to know any API by heart. I'd be glad to chat about this should anyone disagree.
 
 ## Question 1
 Given 2 database tables :
