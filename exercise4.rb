@@ -1,19 +1,5 @@
 #!/usr/bin/ruby
-
-def build_node(array, space_size=0)
-  current_element = array.shift
-  space_size.times { putc "\s" }
-  puts "<" + current_element.to_s + ">"
-  puts
-
-  unless array.empty?
-    build_node(array, space_size + 2)
-    puts
-  end
-
-  space_size.times { putc "\s" }
-  puts "</" + current_element.to_s + ">"
-end
+require 'html_indenter'
 
 # Quits with explaining expected input
 if ARGV.length != 1
@@ -23,4 +9,4 @@ if ARGV.length != 1
 end
 
 array = eval ARGV[0]
-build_node(array)
+HtmlIndenter.build_node(array, 0, true)
