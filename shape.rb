@@ -8,15 +8,21 @@ class Shape
     @dimension_type = "side length"
   end
 
+  def number_of_sides
+    self.class::NUMBER_OF_SIDES || 0
+  end
+
+  def perimeter
+    @dimension * number_of_sides
+  end
+
   def output_sentence
     "A #{self.class.to_s.downcase} with #{dimension_type} #{@dimension.to_s} u has a perimeter of #{perimeter} u and an area of #{area} u^2"
   end
 end
 
 class Triangle < Shape
-  def perimeter
-    @dimension * 3
-  end
+  NUMBER_OF_SIDES = 3
 
   # Triangle area :(b*h)/2
   # b == @dimension
@@ -27,9 +33,7 @@ class Triangle < Shape
 end
 
 class Square < Shape
-  def perimeter
-    @dimension * 4
-  end
+  NUMBER_OF_SIDES = 4
 
   def area
     @dimension**2
@@ -37,9 +41,7 @@ class Square < Shape
 end
 
 class Pentagon < Shape
-  def perimeter
-    @dimension * 5
-  end
+  NUMBER_OF_SIDES = 5
 
   # source : wikipedia.org
   # http://en.wikipedia.org/wiki/Pentagon#Regular_pentagons
