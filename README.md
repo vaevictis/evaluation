@@ -43,14 +43,14 @@ Given a raw string of html with no formatting like:
 
 Write a program to produce the following output:
 
-<html>
-    <body>
-        <div>
-            <a>
-            </a>
-        </div>
-    </body>
-</html>
+		<html>
+		    <body>
+		        <div>
+		            <a>
+		            </a>
+		        </div>
+		    </body>
+		</html>
 
 
 If the html is not valid (ie, there are mismatched or missing tags), print an error. Thus, the following two strings should produce errors:
