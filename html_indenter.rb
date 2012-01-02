@@ -1,6 +1,6 @@
-class HtmlIndenter
+module HtmlIndenter
 
-  def self.build_node(array, space_size=0, blank_line=false)
+  def build_node(array, space_size=0, blank_line=false)
     current_element = array.shift
     space_size.times { putc "\s" }
     puts "<" + current_element.to_s + ">"

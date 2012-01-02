@@ -1,5 +1,6 @@
 #!/usr/bin/ruby
 require 'html_indenter'
+include HtmlIndenter
 
 # Quits with explaining expected input
 if ARGV.length != 1
@@ -9,4 +10,4 @@ if ARGV.length != 1
 end
 
 array = eval ARGV[0]
-HtmlIndenter.build_node(array, 0, true)
+build_node(array, 0, true)

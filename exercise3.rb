@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
-
-require 'html_indenter'
 require 'text_block'
+require 'html_indenter'
+include HtmlIndenter
 
 # Quits with explaining expected input
 if ARGV.length != 1
@@ -14,5 +14,5 @@ text_block = TextBlock.new(ARGV[0])
 text_block.check_tags_symetry
 text_block.to_indentable_array
 
-HtmlIndenter.build_node(text_block.to_indentable_array)
+build_node(text_block.to_indentable_array)
 
